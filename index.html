@@ -8,6 +8,7 @@
 	<link rel="stylesheet"	type="text/css" href="css/framework.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 	
 </head>
@@ -35,10 +36,10 @@
 	</header>
 	<section class="bg-pink" id="home">
 		<div class="wrapper row">
-			<div class="col-sm-12 col-md-4">
+			<div class="col-sm-12 col-md-4 col-lg-5">
 				<img src="img/evening-oak-packaging.png" alt="evening oak blend packaging" data-rjs="2">
 			</div>
-			<div class="col-sm-12 col-md-2">
+			<div class="col-sm-12 col-md-5 col-lg-5">
 				<h2>Evening Oak</h2>
 				<p>Medium-Dark</p>
 				<p>Eastern Java, Indonesia</p>
@@ -50,20 +51,25 @@
 	</section>
 	
 	<section class="wrapper row" id="blends">
-		<header class="col-sm-12 wrapper row">
-				<h2>Blends</h2>
+		<header class="wrapper row">
+			<div class="col-sm-12 col-md-6">
+				<h2>Our Blends</h2>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-5">
 				<div id="rect-1"></div>
-			<p>We only serve the best with our hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
-			<p>*We only ship whole bean.</p> <!-- would I want to make this last p a h2 since the information is important, but I also know that when I need to style it for 
-												css that it isn't the same as my other h2s -->
+			</div>
+			<div class="col-sm-12 col-lg-7">
+				<p>We only serve the best with our hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
+				<p>*We only ship whole bean.</p> 
+			</div>
 		</header>
 		
 		<section>
           <div class="col-sm-5 col-md-4">
           	<img src="img/sunrise-packaging.png" alt="sunrise blend packaging" data-rjs="2">
           </div>
-          <div class="col-sm-7 col-md-5">
-            <h2>Sunrise</h2> <!-- Should this be a h3 and everything else one h below that? -->
+          <div class="col-sm-7 col-md-4">
+            <h3>Sunrise</h3> 
             <p>Light Blend</p>
             <p>La Chiapas, Mexico</p>
             <p>Light, fruity acidity which complements its fully nutty body and unique spicy tones.</p>
@@ -77,7 +83,7 @@
           	<img src="img/midnight-packaging.png" alt="midnight blend packaging" data-rjs="2">
           </div>
           <div class="col-sm-7 col-md-4">
-            <h2>Midnight</h2>
+            <h3>Midnight</h3>
             <p>Dark Blend</p>
             <p>Latin America</p>
             <p>Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
@@ -91,7 +97,7 @@
           	<img src="img/espresso-packaging.png" alt="espresso blend packaging" data-rjs="2">
           </div>
           <div class="col-sm-7 col-md-4">
-            <h2>Espresso</h2>
+            <h3>Espresso</h3>
             <p>Medium Blend</p>
             <p>Latin America, Africa, Indonesia</p>
             <p>Roasted into second crack for a big, bold and dark cup. Beans display oil.</p>
@@ -108,7 +114,7 @@
           	<img src="img/house-blend-packaging.png" alt="finch house blend packaging" data-rjs="2">
           </div>
           <div class="col-sm-7 col-md-4">
-            <h2>Finch House Blend</h2>
+            <h3>Finch House Blend</h3>
             <p>Medium Blend</p>
             <p>Cajamarca &amp;<br>
 				Moyobamba Regions, Peru</p>
@@ -123,7 +129,7 @@
 				<img src="img/evening-oak-packaging.png" alt="evening oak blend packaging" data-rjs="2">
 			</div>
 			<div class="col-sm-7 col-md-8">
-				<h2>Evening Oak</h2>
+				<h3>Evening Oak</h3>
 				<p>Medium-Dark</p>
 				<p>Eastern Java, Indonesia</p>
 				<p>Our featured roast of the season. Pun- gently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
@@ -132,7 +138,7 @@
 			</div>
 		</div>
 		
-		<div class="col-sm-12 col-md-4 bg-oragne" id="ship">
+		<div class="col-sm-12 col-md-4 bg-orange" id="ship">
 			<p>Shipping within 3 days.</p>
 			<p>Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
 			<p>Shipping the freshest coffee and your satisfaction guaranteed.</p>
@@ -145,7 +151,18 @@
                 <h2>Join Us!</h2>
 				 <p>Get more info and deals for the best cup of coffee sent to you directly!</p>
                 <form class="right">
-
+					<div class="col-sm-12">
+						<label for="email"></label>
+  						<input type="email" id="email" name="email" placeholder="Email">
+					</div>
+					<div class="col-sm-6">
+						<label for="first-name"></label>
+  						<input type="text" id="first-name" name="first-name" placeholder="First Name">
+					</div>
+					<div class="col-sm-6">
+ 						<label for="last-name"></label><br>
+ 						<input type="text" id="last-name" name="last-name" placeholder="Last Name">
+					</div>
                 </form>
                 <p><a href="#" class="btn-orange">Join!</a></p>
             </header>
@@ -196,13 +213,13 @@
 				<img src="img/logo.png" alt="" data-rjs="2">
 			</div>
 			<div class="col-sm-4">
-				<h2>Shop</h2>
+				<h4>Shop</h4>
 				<ul>
 					<li><a href="#home">Seasonal Blend</a></li>
 					<li><a href="#blends">Blends</a></li>
 					<li><a href="#ship">Shipping Info</a></li>
 				</ul>
-				<h2>About</h2>
+				<h4>About</h4>
 				<ul>
 					<li><a href="https://www.coffeereview.com/" target="_blank">Coffee Review</a></li>
 					<li><a href="#blends">Our Message</a></li>
@@ -210,7 +227,7 @@
 				</ul>
 			</div>
 			<div class="col-sm-4">
-				<h2>Contact Us</h2>
+				<h4>Contact Us</h4>
 				<ul>
 					<li><a href="https://www.google.com/maps/dir/40.8490918,-96.8029498/1055+NW+Northrup+St,+Portland,+OR+97209/@42.7672458,-127.667817,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x549509fdfd0eee43:0x2d26fc3fc1705368!2m2!1d-122.6819959!2d45.5316007" target="_blank">Location<br>Portland OR. 1055 NW Northrup St.</a></li>
 					<li><a href="tel:1+503-227-0464">Phone<br>503-227-0464</a></li>

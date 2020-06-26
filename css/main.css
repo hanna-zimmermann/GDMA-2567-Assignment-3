@@ -43,7 +43,7 @@
 3.0 - GENERIC
 -------------------------------------------------------------- */
 
-* {
+* { font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -56,9 +56,15 @@ img {
 	width: 100%;
 }
 
-h1 img {
-	width: 25%;
+h2 {
+	font-weight: 900;
 }
+
+p {
+	font-size: 14px;
+}
+
+
 @media screen and (min-width: 768px) {
 }
 
@@ -78,25 +84,108 @@ h1 img {
 -------------------------------------------------------------- */
 /* -- TYPE -- */ 
 
+footer, h4, #ship, blockquote, blockquote~p{
+	text-align: center;
+}
+
+header li a, a, .btn-orange a:hover, h4{
+	color: #fff;
+}
+
+h2, a:hover, h3~p:first-child, h3~p:first-of-type { 
+	color: #ff8b8d;
+}
+
+h4 li {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
 
 
+#blends h2, nav {
+	text-transform: uppercase;
+}
+
+nav, h3 {
+	font-weight: 600;
+}
+
+h3~p:first-of-type, h3~p:nth-of-type(2){
+	font-size: 12px;
+	font-weight: 500;
+	
+}
+
+
+
+
+
+	
 /* -- LAYOUT -- */ 
 
+header li {
+	display: inline-block;
+}
+
+.btn-orange {
+	-webkit-border-radius: 10px;
+	-mox-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px 30px;
+	display: inline-block;
+}
 
 
-
-/* -- HEADERS -- */ 
-
-.bg-orange {
-	background-color: orange;
+.bg-orange, .btn-orange, #rect-1 {
+	background-color: #ffb781;
 }
 
 .bg-pink {
-	background-color: pink;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+	background-color: #ffe5e0;
 }
 
+#ship p {
+	padding: 10px 40px;
+}
+
+ #rect-1 {
+	width: 510px;
+	height: 70px;
+	position: relative;
+	top: -0px;
+	left: -100px;
+}
+
+blockquote {
+	padding: 15px 30px;
+}
+
+blockquote {
+	margin-top: 30px;
+}
+
+#contact-us{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+	
+	#about-us div {
+		float: right;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+} 
 /*--------------------------------------------------------------
 7.0 - UTILITES
 -------------------------------------------------------------- */
